@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Salutation à tout le monde devops') {
             steps {
-                echo 'Bonjour tout le monde'
+                echo 'Hello tout le monde'
             }
         }
         stage('Début du pipeline ...') {
@@ -13,6 +13,7 @@ pipeline {
         }
         stage('Création image Docker') {
             steps {
+
                 sh 'docker build -t chayma_ams_2024 .'
             }
         }
